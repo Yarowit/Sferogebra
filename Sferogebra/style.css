@@ -1,0 +1,292 @@
+html, body 
+{
+  margin: 0px;
+  color: #ddd;
+  background-color: #303030;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container
+{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#sidebar
+{
+	float: left;
+	width: 10%;
+	height: auto;
+	background-color: #303030;
+	position: absolute;
+	z-index: 98;
+}
+
+	#funkcje
+	{
+		position:absolute;
+		width: 40vw;
+		margin: 2vh 0.5vw;
+		font-size: 4vh;
+		height: 10vw;
+		z-index: 100;
+	}
+		.funkcja
+		{
+			margin: 0px;
+			width: 5vh;
+			float: left;
+		}
+		
+		.funkcja:hover
+		{
+			text-shadow: 0px 0px 7px #ddd;
+			cursor: pointer;
+		}
+
+	#tryby
+	{
+		position: absolute;
+		margin-top: 14vh;
+		margin-left: 1vw;
+		z-index: 104;
+	}
+		.tryb
+		{
+			margin: 3vh 0;
+			width:6vh;
+			height:6vh;
+			border: 1px solid #ddd;
+			border-radius: 1vh;
+			background-color: #404040;
+			font-size:3vh;
+			text-align: center;
+			padding: 0.3vh;
+		}
+		
+		.trybClick
+		{
+			margin: 3vh 0;
+			width:6vh;
+			height:6vh;
+			border: 1px solid #c3334b;
+			border-radius: 1vh;
+			background-color: #404040;
+			font-size:3vh;
+			text-align: center;
+			padding: 0.3vh;
+		}
+
+		.tryb:hover
+		{
+			cursor: pointer;
+			border: 1px solid #c4443b;
+		}
+
+#scene-container 
+{
+	float: left;
+	margin: 0px;
+	position: absolute;
+	width: 80%;
+	height: 100%;
+}
+.filler{
+	color: red;
+}
+.pointer{
+	cursor: pointer;
+}
+.grab{
+	cursor: grab;
+}
+.default{
+	cursor: default;
+}
+#rightbar
+{
+	position: absolute;
+	left:80%;
+	background-color: #444;
+	float: left;
+	margin: 0;
+	width: 20%;
+	height: 100%;
+}
+
+	#title
+	{
+		font-size: 4.7vw;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		/* padding-bottom: 20px; */
+		border-bottom: 0.1vw solid #ddd;
+		height: 11.5vw;  
+	}
+
+
+
+#ikonka
+{
+	margin-top: 1.5vh;
+}
+#kolorki
+{
+	padding-bottom: 0vh;
+	padding-top: 1vh;
+	font-size: 4vh;
+}
+
+#cofnij
+{
+	float: left;
+}
+#oddaj
+{
+	float: left;
+
+}
+
+#dane
+{
+	text-align:center;
+	font-size: 2.5vw;
+}
+
+
+.dane
+{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding: 10px 0px;
+}
+
+.input
+{
+	font-size: 1.4vw;
+	position:relative;
+	bottom: 3px;
+	width: 20%;
+	height: 7%;
+	border: medium ridge #fff;
+	border-radius: 0.2vw;
+}
+
+.minus
+{
+	display:inline-block;
+	margin-left: 5px;
+}
+
+.minus:hover
+{
+	text-shadow: 0px 0px 7px #ddd;
+	cursor: pointer;
+}
+
+#plus
+{
+	font-size: 50px;
+	margin: auto;
+	width: 20px;
+	height: 20px;
+}
+
+#plus:hover
+{
+	text-shadow: 0px 0px 7px #ddd;
+	cursor: pointer;
+}
+
+#kolory
+{
+	position: absolute;
+	/* width: 14.6vw; */
+	/* height: 20vh; */
+	border: 0.03vw solid #ddd;
+	border-radius: 10px;
+	background-color: #334;
+	z-index: 105;	
+	visibility: hidden;
+}
+#kolory:hover
+{
+	cursor: default;
+}
+
+.kolory
+{
+	float:left;
+	width: 2.9vw;
+	height: 2.4vw;
+	border-radius: 5px;
+	border: thin solid #000;
+	margin:0.25vw;
+}
+
+.kolory:hover
+{
+	cursor: pointer;
+}
+
+#doscrolla
+{
+	overflow: auto;
+	 /* min-height: 20vh;  */
+	/* height: 70vh; */		
+	height: calc(100vh - 17.7vw);
+}
+
+#degrad
+{
+	position: fixed;
+	bottom: 0;
+	height: 6vw;
+	width: 100%;
+	background-color: #444;
+	border-top: 0.1vw solid #999;
+}
+
+.guzik
+{
+	font-size: 2vw;
+	margin: 1vw;
+	padding:  0.7vw 0;
+	text-align:center;
+	float: left;
+	width: 4vw;
+	border-radius: 3px;
+	border: 0.2vw solid #777;
+	background-color: #555;
+}
+
+.guzikC
+{
+	font-size: 2vw;
+	margin: 1vw;
+	padding:  0.7vw 0;
+	text-align:center;
+	float: left;
+	padding: vw;
+	width: 4vw;
+	border-radius: 3px;
+	border: 0.2vw solid #999;
+	background-color: #555;
+}
+
+
+.guzik:hover
+{
+	background-color: #666;
+	cursor:pointer;
+}
+
+#footer
+{
+	clear: both;
+}

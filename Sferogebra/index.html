@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>SferoGebra</title>
+
+    <meta charset="UTF-8" />
+	
+	<link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css">    
+    <link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	
+    <script src="three.min.js"></script>
+    <script src="OrbitControls.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="container">
+		<div id="sidebar">
+			<div id='funkcje'>
+				<span id="cofnij" class="funkcja"><i class="icon-ccw"> </i></span><span id="oddaj" class="funkcja"><i class="icon-cw"> </i></span>
+			</div>
+			<div id ='tryby'>
+				<div id="pointer" class="tryb">
+					<div id='ikonka'>
+						<i class="icon-mouse-pointer"> </i>
+					</div> 
+				</div>
+				<div id="point" class="tryb">
+					<img height='100%' width='100%' src='img/punkt3.png'/>
+				</div>
+				<div id="gCircle" class="tryb">
+					<img height='100%' width='100%' src='img/kWielkie2.png'/>
+				</div>
+				<div id="Circle" class="tryb">
+					<img height='100%' width='100%' src='img/koło2.png'/>
+				</div>
+				<div id="CircleFromCenter" class="tryb">
+					<img height='100%' width='100%' src='img/środek2.png'/>
+				</div>
+				<div id="testIntersection" class="tryb">
+					<img height='100%' width='100%' src='img/przecięcie2.png'/>
+				</div>
+				<div id="kolorki" class="tryb">
+				<i class="icon-art-gallery"> </i>
+				</div>
+				
+			</div>
+		</div>
+	
+		<div id="scene-container">
+			<div id='kolory'>
+				<div class="kolory" style='background-color:#f00' onclick="currentObject.color = 0xff0000; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#0f0' onclick="currentObject.color = 0x00ff00; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#00f' onclick="currentObject.color = 0x0000ff; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#ff0' onclick="currentObject.color = 0xffff00; currentObject.default();"></div>
+				<div style="clear:both;"></div>
+				<div class="kolory" style='background-color:#0ff' onclick="currentObject.color = 0x00ffff; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#f0f' onclick="currentObject.color = 0xff00ff; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#339' onclick="currentObject.color = 0x333399; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#393' onclick="currentObject.color = 0x339933; currentObject.default();"></div>
+				<div style="clear:both;"></div>
+				<div class="kolory" style='background-color:#933' onclick="currentObject.color = 0x993333; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#993' onclick="currentObject.color = 0x999933; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#939' onclick="currentObject.color = 0x993399; currentObject.default();"></div>
+				<div class="kolory" style='background-color:#399' onclick="currentObject.color = 0x339999; currentObject.default();"></div>
+			</div>
+		</div>
+		
+		<div id="rightbar">
+			<div id='title'>
+				SFER<img width = "18%" src="img/logo3.png"/>
+				</br>
+				GEBRA
+			</div>
+			<div id="doscrolla">
+				<div id = 'dane'>
+				</div>
+				
+					<div id='plus'>+</div>
+			</div>
+			<div id = "degrad">
+				<div id="deg" class="guzikC" onclick='unit(0);'>x &deg;</div>
+				<div id="rad" class="guzik" onclick='unit(1);'>&#13229;</div>
+				<div id="tPI" class="guzik" onclick='unit(2);'> &#x03C0; &#13229;</div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+    <div id="footer">
+		<script src="script.js"></script>
+    </div>
+  </body>
+</html>

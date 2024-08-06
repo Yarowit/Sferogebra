@@ -1,0 +1,5 @@
+
+.icon-ccw:before { content: '\e800'; } /* '' */
+.icon-cw:before { content: '\e801'; } /* '' */
+.icon-art-gallery:before { content: '\e803'; } /* '' */
+.icon-mouse-pointer:before { content: '\f245'; } /* '' */
